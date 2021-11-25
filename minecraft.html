@@ -1,0 +1,90 @@
+<title>
+	Minecraft tricks
+</title>
+<head>
+	<script type="text/javascript">
+		function myFunction() {
+			var copyText = "/give @p minecraft:firework_rocket{Fireworks:{Flight:127}}";
+  			navigator.clipboard.writeText(copyText);
+  			alert("Copied the text: " + copyText);
+		}
+		function myFunctiont() {
+			var copyText = "/summon minecart ~ ~ ~ {Passengers:[{id:ender_dragon,Health:0}]}";
+  			navigator.clipboard.writeText(copyText);
+  			alert("Copied the text: " + copyText);
+		}
+		function myFunctionu() {
+			var copyText = '/summon tnt ~ ~10 ~ {Passengers:[{id:falling_block,Time:-9999,BlockState:{Name:"anvil"},Passengers:[{id:tnt,Fuse:40},{id:tnt,Fuse:40},{id:tnt,Fuse:40},{id:tnt,Fuse:40,Passengers:[{id:tnt,Fuse:80}]}]}],Fuse:30}';
+  			navigator.clipboard.writeText(copyText);
+  			alert("Copied the text: " + copyText);
+		}
+</script>
+	<style>
+		body
+		{
+			background-image: url("back.jpg");
+			cursor:url(1.cur),auto;
+		}
+		.button {
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButton {
+		  background-color: #ffa808;
+		  color: black;
+		  border: 5px solid #ff08ef;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButton:hover {
+		  background-color: #f108ff;
+		  color: white;
+		  border: 5px solid #f8a868;
+		  cursor:url(2.cur),auto;
+		}
+		.AHJButtont {
+		  background-color: #ffa858;
+		  color: black;
+		  border: 5px solid #ff18ef;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButtont:hover {
+		  background-color: #ff08ef;
+		  color: white;
+		  border: 5px solid #ffa808;
+		  cursor:url(2.cur),auto;
+		}
+		.container {
+		  height: 200px;
+		  position: relative;
+		  border: 0;
+		}
+		
+		.center {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+		</style>
+	</head>
+	<body>
+	<h5 style="color: white;">Minecraft tricks</h5>
+	<h1 style="font-family: harlow solid;color: white;text-align: center;"> Minecraft tricks </h1>
+	<div class="container">
+  		<div class="center">
+  			<button class="button AHJButton" onclick="myFunction()">Mega firework command (2 min)</button>
+  			<button class="button AHJButtont" onclick="myFunctiont()">Disco light</button>
+  			<button class="button AHJButton" onclick="myFunctionu()">Falling mega bomb</button>
+		</div>
+    </div>
+</body>

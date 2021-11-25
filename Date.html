@@ -1,0 +1,90 @@
+<title>
+	Date and Time
+</title>
+<head>
+		<script>
+		function display_c(){
+			var refresh=1000; // Refresh rate in milli seconds
+			mytime=setTimeout('display_ct()',refresh)
+		}
+
+		function display_ct() {
+			var x = new Date()
+			document.getElementById('ct').innerHTML = x;
+			display_c();
+ 		}
+		</script>
+	<style>
+		body
+		{
+			background-image: url("back.jpg");
+			cursor:url(1.cur),auto;
+		}
+		.button {
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  transition-duration: 0.4s;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButton {
+		  font-family: bradley hand itc;
+		  color: white;
+		  font-size: 150%;
+		  text-align: center;
+		  background-color: blue;
+		  border: 5px solid #fff87f;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButton:hover {
+		  font-family: bradley hand itc;
+		  color: black;
+		  text-align: center;
+		  background-color: green;
+		  border: 5px solid #fff8fe;
+		  cursor:url(2.cur),auto;
+		}
+		.AHJButtonu {
+		  font-family: berlin sans fb;
+		  color: white;
+		  font-size: 150%;
+		  text-align: center;
+		  background-color: blue;
+		  border: 5px solid #fff87f;
+		  cursor:url(1.cur),auto;
+		}
+		.AHJButtonu:hover {
+		  font-family: berlin sans fb;
+		  color: black;
+		  text-align: center;
+		  background-color: green;
+		  border: 5px solid #fff8fe;
+		  cursor:url(2.cur),auto;
+		}
+		.container {
+		  height: 70px;
+		  position: relative;
+		  border: 0;
+		}
+		
+		.center {
+		  margin: 0;
+		  position: absolute;
+		  top: 50%;
+		  left: 50%;
+		  -ms-transform: translate(-50%, -50%);
+		  transform: translate(-50%, -50%);
+		}
+		</style>
+	</head>
+	<body onload = display_ct();>
+	<h5 style="color: white;">Date and Time page</h5>
+	<h1 style="font-family: bradley hand itc;color: white;text-align: center;"> Date and Time </h1>
+	<h3 style ="text-align: center; color: white;">Date and time: </h3>
+	<h2 style = "text-align: center; color: white;"><span id="ct"></span></h2>
+</body>
